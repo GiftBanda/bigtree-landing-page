@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color:  #333;
+    --secondary-color:  #d10303;
+}
+
+::selection {
+    background-color: #db6400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #db6400;
+    
+}
+
+nav .logo {
+    position: relative;
+    max-width: 80px;
+    
+}
+
+.showcase {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase .description {
+    position: relative;
+    max-width: 600px;
+}
+
+.showcase .description h1 {
+    color: var(--primary-color);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.showcase .description h1 span {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.showcase .description p {
+    color: var(--primary-color);
+}
+
+.showcase .description a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.showcase .description a:hover {
+    transform: scale(0.9);
+}
+
+.showcase .container {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.showcase .container img {
+    max-width: 360px;
+    height: 360px;
+    
+}
+
+.beverages {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.beverages li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.beverages li:hover {
+    transform: translateY(-15px);
+}
+
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links a li i {
+    display: inline-block;
+    font-size: 40px;
+    margin: 5px 0;
+    transform: scale(0.5);
+    color: #fff;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    clip-path: circle(600px at right 800px);
+}
+
+/* Beverages */
+.beverages .kungfu {
+    background-color: #d10303;
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
+
+.beverages .wildcat {
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
+
+.beverages .fruiticana {
+    background-color: #db6400;
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
+
+.beverages .sundance {
+    background-color: #fc7608;
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
+
+.beverages .appy {
+    background-color: #037403;
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
+
+.beverages .brothers {
+    background-color: #031474;
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
+
+.beverages .redrock {
+    background-color: #740303;
+    color: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    /* margin-bottom: 8px; */
+    text-decoration: none;
+}
